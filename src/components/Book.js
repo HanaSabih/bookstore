@@ -1,4 +1,3 @@
-// import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -15,14 +14,6 @@ const Book = (book) => {
       </Card.Body>
 
     </Card>
-    // <Container>
-
-  // <article className="one-book">
-  //   <p className="book-title">{title}</p>
-  //   <p className="book-author">{author}</p>
-  //   <button type="button" className="add-btn">delete</button>
-  // </article>
-  // </Container>
   );
 };
 export default Book;
