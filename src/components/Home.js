@@ -1,26 +1,19 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Book from './Book';
 import InputForm from './Form';
 
-const booksArr = [
-  { id: 1, title: 'Cheque book', author: 'Vasdev Mohi' },
-  { id: 2, title: 'The Overstory', author: 'Richard Powers' },
-  { id: 3, title: 'The Braille edition of the book Exam Warriors', author: 'PM Narendra Modi' },
-];
-
 const Home = () => {
-  const [state] = useState(booksArr);
+  const books = useSelector((state) => state.books.books);
   return (
     <>
       <section className="book-list">
 
         <Container>
-          {state.map((booksArr) => (
+          {books.map((book) => (
             <Book
-              key={booksArr.id}
-              title={booksArr.title}
-              author={booksArr.author}
+              key={book.id}
+              book={book}
             />
           ))}
         </Container>
