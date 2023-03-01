@@ -10,6 +10,7 @@ const Categories = () => {
   };
   return (
     <div className="categories-page">
+      <h1>{categoriesRes}</h1>
       <button
         className="status-btn btn"
         type="button"
@@ -17,7 +18,7 @@ const Categories = () => {
       >
         CHECK STATUS
       </button>
-      <h1>{categoriesRes}</h1>
+
     </div>
   );
 };
