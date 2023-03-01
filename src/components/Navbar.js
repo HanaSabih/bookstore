@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 
 const Navbars = () => (
   <>
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className=" border-bottom  ">
       <Container>
         <Navbar.Brand href="/" className="text-primary fw-bolder fs-3">Bookstore CMS</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -15,7 +15,9 @@ const Navbars = () => (
             <Nav.Link href="/">BOOKS</Nav.Link>
             <Nav.Link href="/Categories">CATEGORIES</Nav.Link>
           </Nav>
-          <Button variant=" justify-content-end btn btn-outline-secondary rounded-circle">👤</Button>
+          <Button variant=" justify-content-end btn btn-outline-secondary rounded-circle px-2 py-1 me-1 text-primary">
+            <i className="fas fa-user" />
+          </Button>
 
         </Navbar.Collapse>
       </Container>

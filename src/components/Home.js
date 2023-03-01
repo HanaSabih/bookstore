@@ -6,22 +6,19 @@ import Form from './Form';
 const Home = () => {
   const bookNames = useSelector((state) => state.books);
   return (
-    <>
-      <section className="book-list">
-
-        <Container>
-          {bookNames.map((book) => (
-            <Book
-              key={book.item_id}
-              id={book.item_id}
-              title={book.title}
-              author={book.author}
-            />
-          ))}
-        </Container>
-        <Form />
-      </section>
-    </>
+    <Container className="lightGreyBg">
+      <Container className="mt-3 px-0 bookListContainer">
+        {bookNames.map((book) => (
+          <Book
+            key={book.item_id}
+            id={book.item_id}
+            title={book.title}
+            author={book.author}
+          />
+        ))}
+      </Container>
+      <Form />
+    </Container>
   );
 };
 
