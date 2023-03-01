@@ -1,23 +1,25 @@
 import { useSelector } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Book from './Book';
-import InputForm from './Form';
+import Form from './Form';
 
 const Home = () => {
-  const books = useSelector((state) => state.books.books);
+  const bookNames = useSelector((state) => state.books);
   return (
     <>
       <section className="book-list">
 
         <Container>
-          {books.map((book) => (
+          {bookNames.map((book) => (
             <Book
-              key={book.id}
-              book={book}
+              key={book.item_id}
+              id={book.item_id}
+              title={book.title}
+              author={book.author}
             />
           ))}
         </Container>
-        <InputForm />
+        <Form />
       </section>
     </>
   );
