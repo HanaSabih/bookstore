@@ -43,15 +43,16 @@ const InputForm = () => {
   };
 
   return (
-    <Container className="fixed-bottom pb-3 bg-white border-top">
-      <h1>Add New Book</h1>
+    <Container className="fixed-bottom pb-5 lightGreyBg border-top " id="contform">
+      <h2 className="text-secondary py-2">Add New Book</h2>
       <Form onSubmit={handleBook}>
-        <Row className="mb-3">
+        <Row className="mb-3 justify-content-between">
           <Form.Group as={Col} md="5">
             <Form.Label className="d-none ">Title</Form.Label>
             <Form.Control
               required
               id="title"
+              className="rounded-0"
               name="title"
               type="text"
               placeholder="Title"
@@ -65,6 +66,7 @@ const InputForm = () => {
             <Form.Control
               required
               id="author"
+              className="rounded-0 ps-2"
               name="author"
               type="text"
               placeholder="Author"
@@ -73,7 +75,7 @@ const InputForm = () => {
               onChange={handleInput}
             />
           </Form.Group>
-          <Button type="submit" className="w-auto ">Add Book</Button>
+          <Button type="submit" className="w-auto   rounded-0 px-5 ">Add Book</Button>
         </Row>
 
       </Form>
