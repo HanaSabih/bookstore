@@ -115,7 +115,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Billy Mohajeri**
+👤 **Hana Sabih**
 
 - GitHub: [@hanasabih](https://github.com/HanaSabih)
 - LinkedIn: [@hanasabih](https://www.linkedin.com/in/hana-sabih/)
